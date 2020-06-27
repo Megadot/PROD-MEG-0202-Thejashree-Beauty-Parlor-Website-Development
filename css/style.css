@@ -417,6 +417,16 @@ mark,
 .figure-caption {
   font-size: 90%;
   color: #6c757d; }
+  .fluid-0{
+    height: 430px !important;
+  }
+.fluid-1{
+  height: 432px !important;
+}
+.fluid-2{
+  height: 430px !important;
+  width: 309px !important;
+}
 
 code,
 kbd,
