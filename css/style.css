@@ -7977,15 +7977,16 @@ h1, h2, h3, h4, h5,
 .discount {
   color: rgba(255, 255, 255, 0.8); }
   .discount h3 {
-    color: #fff;
+    color: #000;
     margin-bottom: 0;
     font-size: 24px; }
   .discount h2 {
     font-size: 40px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase; }
   .discount p {
-    font-size: 16px; }
+    font-size: 16px;
+    color: #000; }
 
 .ftco-social a {
   width: 30px;
@@ -8867,3 +8868,55 @@ textarea.form-control {
     .list-inline{
       list-style: none;
     }
+    .header-text {
+      position: absolute;
+      top: 20%;
+      left: 1.8%;
+      right: auto;
+      width: 96.66666666666666%;
+      color: #ffffff;
+  }
+  
+  .header-text h2 {
+      font-size: 40px;
+      font-family: 'Raleway',sans-serif;
+      color: #fff;
+  }
+  
+  .header-text h2 span {
+      background-color: #2980b9;
+    padding: 10px;
+  }
+  
+  .header-text h3  {
+    font-family: 'Raleway',sans-serif;
+    color: #fff;
+    line-height: 1.1;
+  }
+  @media (min-width: 320px) {
+    .header-text h3 {
+      font-size: 20px; } }
+  @media (min-width: 360px) {
+    .header-text h3 {
+      font-size: 20px; } }
+  .hgt{
+    height: 546px;
+  }
+  @media (min-width: 1024px) {
+    .hgt {
+      height: 1247px; } }
+ @media (min-width: 768px) {
+        .hgt {
+          height: 905px; } }
+ @media (min-width: 320px) {
+    .hgt {
+      height: 449px; } }
+     @media (min-width: 375px) {
+      .hgt {
+        height: 548px; } }
+       @media (min-width: 414px) {
+        .hgt {
+          height: 617px; } }
+         @media (min-width: 360px) {
+          .hgt {
+            height: 521px; } }
