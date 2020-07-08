@@ -8920,3 +8920,8 @@ textarea.form-control {
          @media (min-width: 360px) {
           .hgt {
             height: 521px; } }
+
+/* work pages styles */
+.img-hgt{
+height: 412px;
+}
