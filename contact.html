@@ -59,7 +59,7 @@
 		              <p><span>Address:</span> 60/78, Annaikarai st, Tenkasi-627811</p>
 		            </div>
 		            <div class="col-md-12 mb-3">
-		              <p><span>Phone:</span> <a href="tel://89039 84493">+91-89039 84493</a></p>
+		              <p><span>Phone:</span> <a href="tel:+91-89039 84493">+91-89039 84493</a></p>
 		            </div>
 		            <div class="col-md-12 mb-3">
 		              <p><span>Email:</span> <a href="mailto:shembasathish@gmail.com">shembasathish@gmail.com</a></p>
@@ -75,12 +75,12 @@
               	<div class="row">
               		<div class="col-md-6">
 		                <div class="form-group">
-		                  <input type="text" class="form-control" placeholder="Your Name">
+		                  <input type="text" class="form-control" placeholder="First Name">
 		                </div>
 	                </div>
 	                <div class="col-md-6">
 		                <div class="form-group">
-		                  <input type="text" class="form-control" placeholder="Your Email">
+		                  <input type="text" class="form-control" placeholder="Last Email">
 		                </div>
 		                </div>
                 </div>
@@ -98,8 +98,9 @@
           </div>
         </div>
       </section>
-
-      <div id="map"></div>
+      <div class="map-img"><a href="https://www.google.com/maps/place/8%C2%B057'11.1%22N+77%C2%B018'56.6%22E/@8.9533398,77.315499,18z/data=!4m5!3m4!1s0x0:0x0!8m2!3d8.9530908!4d77.3157136?hl=en" target="_blank"><img class="d-block w-100 map-hgt" src="images/map.PNG" alt="Maps" height="500" width="100%"></a></div>
+<!-- 
+      <div id="map"></div> -->
       <footer class="ftco-footer ftco-section img">
         <div class="overlay"></div>
         <div class="container">
@@ -202,6 +203,14 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript">
+    function send() {
+      var link = 'mailto:shembasathish@gmail.com?subject=Message from '
+           +document.getElementById('firstname').value
+           +'&body='+document.getElementById('lastname').value;
+      window.location.href = link;
+    }
+    </script>
     
   </body>
 </html>

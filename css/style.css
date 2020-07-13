@@ -8925,3 +8925,8 @@ textarea.form-control {
 .img-hgt{
 height: 412px;
 }
+@media (max-width: 991.98px) {
+.map-hgt {
+    height: 300px;
+}
+}

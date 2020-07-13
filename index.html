@@ -223,7 +223,7 @@
 						<h3>Save up to 10% Off</h3>
 						<h2 class="mb-4">Bridal Discount</h2>
 						<p class="mb-4">It is not always yourself who knows best what would fit you perfectly. Thejashree Beauty Parlor gives you Best Bridal Makeup in Tenkasi.</p>
-						<p><a href="#" class="btn btn-white btn-outline-white px-4 py-3">View More</a></p>
+						<p><a href="services.html" class="btn btn-white btn-outline-white px-4 py-3">View More</a></p>
 					</div>
 				</div>
 			</div>
@@ -239,7 +239,7 @@
         </div>
         <div class="row">
         	<div class="col-md-4 ftco-animate">
-        		<a href="#" class="work-entry">
+        		<a href="work.html" class="work-entry">
         			<img src="images/assets/emboddiery.jpeg" class="img-fluid fluid-0" alt="Design" width="309" height="295">
         			<div class="info d-flex align-items-center">
         				<div>
@@ -252,7 +252,7 @@
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
-        		<a href="#" class="work-entry">
+        		<a href="work.html" class="work-entry">
         			<img src="images/assets/hairstyle.jpeg" class="img-fluid fluid-1" alt="Hair Style" width="309" height="295">
         			<div class="info d-flex align-items-center">
         				<div>
@@ -265,7 +265,7 @@
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
-        		<a href="#" class="work-entry">
+        		<a href="work.html" class="work-entry">
         			<img src="images/assets/handadv.jpeg" class="img-fluid fluid-2" alt="Hand Art">
         			<div class="info d-flex align-items-center">
         				<div>
@@ -460,13 +460,13 @@
 	    		</div>
 	    		<div class="col-md-6 appointment pl-md-5 ftco-animate">
 	    			<h3 class="mb-3">Appointments</h3>
-	    			<form action="#" class="appointment-form">
+	    			<form action="#" method="post" class="appointment-form">
 	            <div class="row form-group d-flex">
 	            	<div class="col-md-6">
-	            		<input type="text" class="form-control" placeholder="First Name">
+	            		<input type="text" class="form-control" placeholder="First Name" id="firstname">
 	            	</div>
 	            	<div class="col-md-6">
-	            		<input type="text" class="form-control" placeholder="Last Name">
+	            		<input type="text" class="form-control" placeholder="Last Name" id="lastname">
 	            	</div>
 	            </div>
 	            <div class="row form-group d-flex">
@@ -481,10 +481,10 @@
 	            	</div>
 	            </div>
 	            <div class="form-group">
-	              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+	              <textarea name="" id="message" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
 	            </div>
 	            <div class="form-group">
-	              <input type="submit" value="Order" class="btn btn-white btn-outline-white py-3 px-4">
+	              <input type="submit" value="Order" onclick="send()" class="btn btn-white btn-outline-white py-3 px-4">
 	            </div>
 	          </form>
 	    		</div>    			
@@ -511,12 +511,12 @@
              <div class="ftco-footer-widget mb-4 ">
               <h2 class="ftco-heading-2">Servies</h2>
               <ul class="list-unstyled">
-				<li><a href="#" class="py-2 d-block">Aari Work Design</a></li>
-				<li><a href="#" class="py-2 d-block">Bridal</a></li>
-				<li><a href="#" class="py-2 d-block">Blouse Design</a></li>
-				<li><a href="#" class="py-2 d-block">Mehndi</a></li>
-				<li><a href="#" class="py-2 d-block">Mehndi</a></li>
-                <li><a href="#" class="py-2 d-block">Hair Style</a></li>               
+				<li><a href="work.html" class="py-2 d-block">Aari Work Design</a></li>
+				<li><a href="work.html" class="py-2 d-block">Bridal</a></li>
+				<li><a href="work.html" class="py-2 d-block">Blouse Design</a></li>
+				<li><a href="work.html" class="py-2 d-block">Mehndi</a></li>
+				<li><a href="work.html" class="py-2 d-block">Mehndi</a></li>
+                <li><a href="work.html" class="py-2 d-block">Hair Style</a></li>               
               </ul>
             </div>
 		  </div>
@@ -538,8 +538,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">60/78, Annaikarai st, Tenkasi-627811</span></li>
-	                <li><a href="telto:+91-89039 84493"><span class="icon icon-phone"></span><span class="text">+91-89039 84493</span></a></li>
-	                <li><a href="mailt0:shembasathish@gmail.com"><span class="icon icon-envelope"></span><span class="text">shembasathish@gmail.com</span></a></li>
+	                <li><a href="tel:+91-89039 84493"><span class="icon icon-phone"></span><span class="text">+91-89039 84493</span></a></li>
+	                <li><a href="mailto:shembasathish@gmail.com"><span class="icon icon-envelope"></span><span class="text">shembasathish@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -595,6 +595,34 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script>
+	  function sendEmail() {
+		Email.send({
+			// SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+	// 		Host : "smtp.gmail.com",
+	// 		Port : "587",
+    // Username : "websup.megdot@gmail.com",
+    // Password : "3FA74E2AB7E3F694800CBFFC251A2201B7A6",
+	// Password : "Venkatesh@98",
+    // To : 'avikramastro@gmail.com',
+    // From : "websup.megdot@gmail.com",
+    // Subject : "This is the subject",
+    // Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+	  }
+</script>
+<script type="text/javascript">
+	function send() {
+	  var link = 'mailto:shembasathish@gmail.com?subject=Message from '
+			   +document.getElementById('firstname').value
+			   +'&body='+document.getElementById('lastname').value;
+	  window.location.href = link;
+  }
+  </script>
     
   </body>
 </html>
